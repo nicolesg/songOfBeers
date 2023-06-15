@@ -1,0 +1,28 @@
+function songOfBeers() {
+    var bottlesOfBeer = 99;
+    
+  while (bottlesOfBeer > 0){
+    var bottleWord = "bottles";
+    var countBeers= bottlesOfBeer - 1;
+            
+      if (bottlesOfBeer === 1) {          
+          bottleWord = "bottle";
+      }
+           
+    console.log( bottlesOfBeer + " " + bottleWord + " of beer on the wall ");
+    console.log( bottlesOfBeer + " " + bottleWord + " of beer.");
+    console.log("Take one down and pass it around");
+  
+    bottlesOfBeer --;
+       
+    if(bottlesOfBeer >= 1){
+      console.log( countBeers + " " + bottleWord + " of beer on the wall.");
+      } else if(bottlesOfBeer === 0) { 
+        console.log("No more bottles of beer on the wall, no more bottles of beer.");
+        console.log("Go to the store and buy some more, 99 bottles of beer on the wall.");
+      }  
+   }
+} 
+
+
+songOfBeers();
